@@ -38,23 +38,45 @@ namespace c_.ders._3
             int a = 3;
             int b = 4;
             bool sonuc = a<b;
-            Console.WriteLine(sonuc);
+            Console.WriteLine(sonuc);//1
             
             sonuc = a>b;
-            Console.WriteLine(sonuc);
+            Console.WriteLine(sonuc);//0
            
             sonuc = a>=b;
-            Console.WriteLine(sonuc);
+            Console.WriteLine(sonuc);//0
            
             sonuc = a<=b;
-            Console.WriteLine(sonuc);
+            Console.WriteLine(sonuc);//1
            
             sonuc = a==b;
-            Console.WriteLine(sonuc);
+            Console.WriteLine(sonuc);//0
            
             sonuc = a!=b;
-            Console.WriteLine(sonuc);
-            //Aritmetik (+, -, *, /, %, ++, --)
+            Console.WriteLine(sonuc);//1
+
+            Console.WriteLine("*****Aritmetik Oporatörler*****");
+            //Aritmetik Oporatörler (+, -, *, /, %, ++, --)
+
+            int sayi1 = 10;
+            int sayi2 = 5;
+            int sonuc1 = sayi1/sayi2;
+            Console.WriteLine(sonuc1);//2
+            
+            sonuc1 = sayi1*sayi2;
+            Console.WriteLine(sonuc1);//50
+            
+            sonuc1 = sayi1+sayi2;
+            Console.WriteLine(sonuc1);//15
+            
+            sonuc1 = sayi1++ ;
+            Console.WriteLine(sonuc1);//11
+
+            //% mod oporatörü
+
+            int sonuc2= 20%3;
+            Console.WriteLine(sonuc2);//2 
+
         }
     }
 }
