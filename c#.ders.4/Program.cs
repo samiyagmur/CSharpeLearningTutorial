@@ -84,6 +84,8 @@ namespace c_.ders._4
             Console.WriteLine("rakam1 :"+rakam1);
             Console.WriteLine("double1 :"+double1);
 
+            
+
         }
     }
 }

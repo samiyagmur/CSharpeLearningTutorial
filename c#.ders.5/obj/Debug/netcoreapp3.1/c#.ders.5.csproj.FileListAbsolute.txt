@@ -1,0 +1,13 @@
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\bin\Debug\netcoreapp3.1\c#.ders.5.exe
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\bin\Debug\netcoreapp3.1\c#.ders.5.deps.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\bin\Debug\netcoreapp3.1\c#.ders.5.runtimeconfig.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\bin\Debug\netcoreapp3.1\c#.ders.5.runtimeconfig.dev.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\bin\Debug\netcoreapp3.1\c#.ders.5.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\bin\Debug\netcoreapp3.1\c#.ders.5.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\obj\Debug\netcoreapp3.1\c#.ders.5.csprojAssemblyReference.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\obj\Debug\netcoreapp3.1\c#.ders.5.AssemblyInfoInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\obj\Debug\netcoreapp3.1\c#.ders.5.AssemblyInfo.cs
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\obj\Debug\netcoreapp3.1\c#.ders.5.csproj.CoreCompileInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\obj\Debug\netcoreapp3.1\c#.ders.5.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\obj\Debug\netcoreapp3.1\c#.ders.5.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.5\obj\Debug\netcoreapp3.1\c#.ders.5.genruntimeconfig.cache

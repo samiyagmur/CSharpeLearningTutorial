@@ -83,6 +83,7 @@ namespace ders._2
             Console.WriteLine(datetime);//08.03.2022
             string datetime1 = DateTime.Now.ToString("dd/MM/yyyy");
             Console.WriteLine(datetime1);//08/03/2022
+            
 
             string hour = DateTime.Now.ToString("HH:mm");
             Console.WriteLine(hour);//16:07

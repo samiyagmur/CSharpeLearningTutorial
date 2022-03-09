@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.2\\ders.2.csproj": {}
+    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.5\\c#.ders.5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.2\\ders.2.csproj": {
+    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.5\\c#.ders.5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.2\\ders.2.csproj",
-        "projectName": "ders.2",
-        "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.2\\ders.2.csproj",
+        "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.5\\c#.ders.5.csproj",
+        "projectName": "c#.ders.5",
+        "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.5\\c#.ders.5.csproj",
         "packagesPath": "C:\\Users\\samiy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.2\\obj\\",
+        "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samiy\\AppData\\Roaming\\NuGet\\NuGet.Config"
