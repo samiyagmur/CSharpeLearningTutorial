@@ -68,3 +68,24 @@ namespace c_.ders._5
         }
     }
 }
+
+//ArgumentException	Bir yönteme geçirilen null olmayan bağımsız değişken geçersizdir.
+//ArgumentNullException	Bir yönteme geçirilen bağımsız değişken şu null şekildedir: .
+//ArgumentOutOfRangeException	Bağımsız değişken, geçerli değer aralığının dışındadır.
+//DirectoryNotFoundException	Dizin yolunun bir bölümü geçerli değil.
+//DivideByZeroException	Bir tamsayı veya bölme işlemi içinde Decimal payda sıfırdır.
+//DriveNotFoundException	Sürücü kullanılamıyor veya mevcut değil.
+//FileNotFoundException	Bir dosya yok.
+//FormatException	Değer, gibi bir dönüştürme yöntemi tarafından bir dizeden dönüştürülecek uygun biçimde Parse değildir.
+//IndexOutOfRangeException	Dizin, bir dizinin veya koleksiyonun sınırlarının dışındadır.
+//InvalidOperationException	Yöntem çağrısı bir nesnenin geçerli durumda geçersizdir.
+//KeyNotFoundException	Koleksiyonda bir üyeye erişmek için belirtilen anahtar bulunamıyor.
+//NotImplementedException	Yöntem veya işlem uygulanmaz.
+//NotSupportedException	Yöntem veya işlem desteklenmiyor.
+//ObjectDisposedException	Bir işlem, atıldı bir nesne üzerinde gerçekleştirilir.
+//OverflowException	Aritmetik, tür dönüştürme veya dönüştürme işlemi taşma ile sonuç verir.
+//PathTooLongException	Yol veya dosya adı, sistem tanımlı uzunluk üst sınırını aşıyor.
+//PlatformNotSupportedException	İşlem geçerli platformda desteklenmiyor.
+//RankException	Yanlış sayıda boyuta sahip bir dizi bir yönteme geçirildi.
+//TimeoutException	Bir işlem için gereken zaman aralığının süresi doldu.
+//UriFormatException	Geçersiz bir Tekdüzi Kaynak Tanımlayıcısı (URI) kullanılır.
