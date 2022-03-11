@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\myproject.csproj",
-      "projectName": "myproject",
-      "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\myproject.csproj",
+      "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.8\\c#.ders.8.csproj",
+      "projectName": "c#.ders.8",
+      "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.8\\c#.ders.8.csproj",
       "packagesPath": "C:\\Users\\samiy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\obj\\",
+      "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.8\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samiy\\AppData\\Roaming\\NuGet\\NuGet.Config"

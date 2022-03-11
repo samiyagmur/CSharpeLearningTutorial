@@ -37,3 +37,16 @@ C:\Users\samiy\OneDrive\Masaüstü\c#_ders\ders.1.console\obj\Debug\netcoreapp3.
 C:\Users\samiy\OneDrive\Masaüstü\c#_ders\ders.1.console\obj\Debug\netcoreapp3.1\myproject.dll
 C:\Users\samiy\OneDrive\Masaüstü\c#_ders\ders.1.console\obj\Debug\netcoreapp3.1\myproject.pdb
 C:\Users\samiy\OneDrive\Masaüstü\c#_ders\ders.1.console\obj\Debug\netcoreapp3.1\myproject.genruntimeconfig.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\bin\Debug\netcoreapp3.1\myproject.exe
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\bin\Debug\netcoreapp3.1\myproject.deps.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\bin\Debug\netcoreapp3.1\myproject.runtimeconfig.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\bin\Debug\netcoreapp3.1\myproject.runtimeconfig.dev.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\bin\Debug\netcoreapp3.1\myproject.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\bin\Debug\netcoreapp3.1\myproject.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\obj\Debug\netcoreapp3.1\myproject.csprojAssemblyReference.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\obj\Debug\netcoreapp3.1\myproject.AssemblyInfoInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\obj\Debug\netcoreapp3.1\myproject.AssemblyInfo.cs
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\obj\Debug\netcoreapp3.1\myproject.csproj.CoreCompileInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\obj\Debug\netcoreapp3.1\myproject.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\obj\Debug\netcoreapp3.1\myproject.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#.ders.1\obj\Debug\netcoreapp3.1\myproject.genruntimeconfig.cache

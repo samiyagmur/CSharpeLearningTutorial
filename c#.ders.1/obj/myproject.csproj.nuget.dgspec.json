@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\c#_ders\\ders.1.console\\myproject.csproj": {}
+    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\myproject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\c#_ders\\ders.1.console\\myproject.csproj": {
+    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\myproject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\c#_ders\\ders.1.console\\myproject.csproj",
+        "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\myproject.csproj",
         "projectName": "myproject",
-        "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\c#_ders\\ders.1.console\\myproject.csproj",
+        "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\myproject.csproj",
         "packagesPath": "C:\\Users\\samiy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\c#_ders\\ders.1.console\\obj\\",
+        "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samiy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -50,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.417\\RuntimeIdentifierGraph.json"
         }
       }
     }
