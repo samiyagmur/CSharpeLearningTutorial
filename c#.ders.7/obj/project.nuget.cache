@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IEdl05wWr7Pr6gUgCK9SNXIPzToBCj5UMuM4hhb+GWNLalsvEUMUXJak2XCE5VxtZJKTLCTPuMYs34Zfn+5p7A==",
+  "dgSpecHash": "J0GCzSRmutxoU7cnCD78y4AhaeilG3LTX9Ql8dJR5oWvThRxf7IsTv2iv+ry7drri0k/VuSxWSekk7b8RsgPGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#.ders.7\\c#.ders.7.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\samiy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512"
+  ],
   "logs": []
 }
