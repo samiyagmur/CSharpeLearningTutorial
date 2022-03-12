@@ -7,7 +7,7 @@ namespace c_.ders._9
         static void Main(string[] args)
         {
            //while döngüleri//Consoldan girilen sayı kadar  
-           int ort;
+           
            int toplam=0;
            Console.Write("Kaç adet sayının ortalamasını almak istersiniz: ");
            int count = int.Parse(Console.ReadLine());
