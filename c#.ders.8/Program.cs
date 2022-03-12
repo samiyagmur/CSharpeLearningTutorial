@@ -55,7 +55,7 @@ namespace c_.ders._8
                 
                
             }
-            for( ; ; )//Sonsuz döngü.Kullanıcıdan aldığınız bir sayının sonucunda break komutu ile kırabilirsiniz.
+            //for( ; ; )//Sonsuz döngü.Kullanıcıdan aldığınız bir sayının sonucunda break komutu ile kırabilirsiniz.
             {
                          
                
