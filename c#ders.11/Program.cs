@@ -15,7 +15,7 @@ namespace c_ders._11
             
             
             Console.WriteLine("*****Sıralı Liste*****");
-            Array.Sort(sayiDizisi);
+            Array.Sort(sayiDizisi);            
             foreach (var say in sayiDizisi)
                     Console.WriteLine(say);
             
