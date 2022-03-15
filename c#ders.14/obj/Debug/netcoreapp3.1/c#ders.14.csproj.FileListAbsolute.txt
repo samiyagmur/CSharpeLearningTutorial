@@ -1,0 +1,4 @@
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#ders.14\obj\Debug\netcoreapp3.1\c#ders.14.csprojAssemblyReference.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#ders.14\obj\Debug\netcoreapp3.1\c#ders.14.AssemblyInfoInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#ders.14\obj\Debug\netcoreapp3.1\c#ders.14.AssemblyInfo.cs
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\c#ders.14\obj\Debug\netcoreapp3.1\c#ders.14.csproj.CoreCompileInputs.cache
