@@ -1,0 +1,14 @@
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\bin\Debug\netcoreapp3.1\cSharp.Ders.17.exe
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\bin\Debug\netcoreapp3.1\cSharp.Ders.17.deps.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\bin\Debug\netcoreapp3.1\cSharp.Ders.17.runtimeconfig.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\bin\Debug\netcoreapp3.1\cSharp.Ders.17.runtimeconfig.dev.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\bin\Debug\netcoreapp3.1\cSharp.Ders.17.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\bin\Debug\netcoreapp3.1\cSharp.Ders.17.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.csproj.AssemblyReference.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.AssemblyInfoInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.AssemblyInfo.cs
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.csproj.CoreCompileInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\cSharp.Ders.17\obj\Debug\netcoreapp3.1\cSharp.Ders.17.genruntimeconfig.cache
