@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
 
 namespace CSharp.Ders._21
 {
@@ -21,10 +23,14 @@ namespace CSharp.Ders._21
             kullanıcılar.Add(18, "Ayşe Yılmaz");
             kullanıcılar.Add(20, "Ahmet Yılmaz");
             //Dizinin elemanlarına erişim
+            //var myKey = types.FirstOrDefault(x => x.Value == "one").Key;
+            //using System.Linq;//Eğer bir string değerine karşılık gelen diğer key bulmak isteseydik bu yöntimi kullnucaktık
             Console.WriteLine("**** Elemanlara Erişim *****");
-            Console.WriteLine(kullanıcılar[12]);
-            foreach(var item in kullanıcılar)
-                Console.WriteLine(item);
+            var myKeys = kullanıcılar.FirstOrDefault(x => x.Value == "Ahmet Yılmaz").Key;
+            Console.WriteLine(myKeys);
+            Console.WriteLine(kullanıcılar[10]);
+            // foreach(var item in kullanıcılar)
+            //     Console.WriteLine(item);
 
             //Count;
             Console.WriteLine("**** Count *****");
@@ -50,7 +56,7 @@ namespace CSharp.Ders._21
                 Console.WriteLine(item);
 
 
-
+            
 
 
 
