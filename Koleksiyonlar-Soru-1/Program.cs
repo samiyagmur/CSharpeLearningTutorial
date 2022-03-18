@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;                  
 
-
+www.patika.dev
            //string  = Console.ReadLine();
            // int number2;
            // bool success = int.TryParse(number, out number2);
