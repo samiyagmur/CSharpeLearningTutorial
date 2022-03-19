@@ -25,13 +25,9 @@ namespace CSharp.ders._23
             //**private
             //**Iternal
             //** Protected
-
-            Calisan calisan1 = new Calisan();
-            calisan1.Ad = "Ayşe";
-            calisan1.Soyad = "Kara";
-            calisan1.No = 2168543;
-            calisan1.Depertman = "İnsan kaynakları";
-
+            //kurucu fonksiyon overload(aşırı yükleme)yapılabilir.
+            Calisan calisan1 = new Calisan("Ayşe","Kara",543183,"İnsan kaynakları");//nesneye ayağı kaldırma işlemi
+            
             calisan1.CalisanBilgileri();
             Console.WriteLine("**************************");
             Calisan calisan2 =new Calisan();
@@ -46,7 +42,7 @@ namespace CSharp.ders._23
 
     class Calisan
     {
-        public string Ad;
+        public string Ad;//proportiler üzerinde değişiklik yapmak için kurucu metot tanımlıyourz
 
         public string Soyad;
 
@@ -54,6 +50,15 @@ namespace CSharp.ders._23
 
         public string Depertman;
 
+        public Calisan(string ad,string soyad,int no,string departman)
+        {
+            this.Ad= ad;//this bu sınıfın elemanı olduğu için kullandık
+            this.Soyad= soyad;
+            this.No= no;
+            this.Depertman= departman;
+        }
+        //overload işlemi
+        public Calisan() { };
         public void CalisanBilgileri()
         {
             Console.WriteLine($"Çalışan Adı:{0}", Ad);
@@ -63,3 +68,12 @@ namespace CSharp.ders._23
         }
     }
 }
+//Kurucu metotlar:Bir sınıfın nesnesi oluşturulduğunda yani new ile yeni bir nesne oluşturulduğunuz da
+////arka planda otmatik olarak çalışan metotlardır
+///dolayısı ile bir nesne oluşturulduğunda otamatikmen arka planda yapılmasını istediğimiz bir nesne ayağa kalktığında
+///varsa biz bunu kurucu metotlarla constacterlarla yapılırız
+///Bir kurucu metot sınıf isimle aynı olmak zorundandı.classınla aynı olmak zorunda ismi
+///kuru metotların erişim belirteçleri public olmak zorundadır
+///kurucu metotların geri dönüşleri yoktur
+///kuru fonsiyonların geri dönüş tipini yazmıyoruz
+///birden fazla parametre alabilir yada hiç parametre almayabilir.
