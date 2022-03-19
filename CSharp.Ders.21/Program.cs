@@ -29,8 +29,8 @@ namespace CSharp.Ders._21
             var myKeys = kullanıcılar.FirstOrDefault(x => x.Value == "Ahmet Yılmaz").Key;
             Console.WriteLine(myKeys);
             Console.WriteLine(kullanıcılar[10]);
-            // foreach(var item in kullanıcılar)
-            //     Console.WriteLine(item);
+            foreach(var item in kullanıcılar)
+                 Console.WriteLine(item);
 
             //Count;
             Console.WriteLine("**** Count *****");
@@ -52,7 +52,7 @@ namespace CSharp.Ders._21
                 Console.WriteLine(item);
             //Values
             Console.WriteLine("**** Values *****");
-            foreach (var item in kullanıcılar.Keys)
+            foreach (var item in kullanıcılar.Values)
                 Console.WriteLine(item);
 
 

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#ders.13\\c#ders.13.csproj",
-      "projectName": "c#ders.13",
-      "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#ders.13\\c#ders.13.csproj",
+      "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\Koleksiyonlar-Soru-3\\Koleksiyonlar-Soru-3.csproj",
+      "projectName": "Koleksiyonlar-Soru-3",
+      "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\Koleksiyonlar-Soru-3\\Koleksiyonlar-Soru-3.csproj",
       "packagesPath": "C:\\Users\\samiy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\c#ders.13\\obj\\",
+      "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\Koleksiyonlar-Soru-3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
