@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CS.Sharp.Ders._29
 {
-    public class Canlılar
+    public sealed class Canlılar//sealed kalıtımın önüne geçer
     {
         protected void Beslenme()
         {
@@ -18,5 +18,11 @@ namespace CS.Sharp.Ders._29
         {
             Console.WriteLine("Canlılar Boşaltım Yapar.");
         }
+
+        public virtual void UyarılaraTepki() 
+        {
+            Console.WriteLine("Canlılar uyarılara tepki verir.");
+        }
+
     }
 }

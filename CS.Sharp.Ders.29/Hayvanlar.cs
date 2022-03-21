@@ -10,7 +10,12 @@ namespace CS.Sharp.Ders._29
 		{
 			Console.WriteLine("Hayvalar adaptasyon kurabilir");
 		}
-	}
+        public override void UyarılaraTepki()
+        {
+            base.UyarılaraTepki();
+			Console.WriteLine("Hayvalar temasa tepki verir");
+        }
+    }
 
 	public class Sürüngenler : Hayvanlar
 	{	
@@ -35,6 +40,7 @@ namespace CS.Sharp.Ders._29
 			base.Beslenme();
 			base.Boşaltım();
 			base.Solunum();
+			base.UyarılaraTepki();
 		}
 		public void Ucmak()
 		{

@@ -21,6 +21,9 @@ namespace CS.Sharp.Ders._29
             //Public olarak tanımladığımız tüm sınıfların tüm metolarını protected olarak değiştirdiğimizde
             //Aradaki bağın kopmaması için "base.metot adı" şeklinde bağlantıyı tekrar oluşturarak.Hem kalıtımı ettirir,kalıtım üyelerini kurur ve ana fonkiyonda daha az kod bloğu ile daha çok iş yapmış oluruz.
             //Buna bağlı olarak kodun okunabilirliğide artmış olur.
+
+            //poliformizim:
+            //Override:Virtual anahtar kelimesi
             
             TohumluBitkiler tohumluBitki = new TohumluBitkiler();
             

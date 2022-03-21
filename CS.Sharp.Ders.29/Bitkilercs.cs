@@ -10,6 +10,11 @@ namespace CS.Sharp.Ders._29
         {
             Console.WriteLine("Bitkiler fotosentez yapar.");
         }
+        public override void UyarılaraTepki()
+        {
+            //base.UyarılaraTepki();
+            Console.WriteLine("Bitkiler Güneşe tepki verir.");
+        }
 
 
     }
@@ -21,6 +26,7 @@ namespace CS.Sharp.Ders._29
             base.Beslenme();
             base.Boşaltım();
             base.Solunum();
+            base.UyarılaraTepki();
 
         }
         public void TohumlaCogalma()
@@ -28,6 +34,7 @@ namespace CS.Sharp.Ders._29
             
             Console.WriteLine("Tohumlu bitkiler tozlaşma ile çoğalır");
         }
+        
     }
 
     public class TohumsuzBitkiler:Bitkiler
