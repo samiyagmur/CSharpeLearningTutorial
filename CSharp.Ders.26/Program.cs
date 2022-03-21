@@ -23,16 +23,16 @@ namespace CSharp.Ders._26
             Console.WriteLine("Toplama işlemi sonucu: {0}", Islemler.Topla(400, 50));
 
 
-            //Islemler Sınıfın üyelerine erişmeye çalıştığımızda stastic olduğu için bu sınıf fabu şekilde erişim yapılmaz.
+            //Islemler Sınıfın üyelerine erişmeye çalıştığımızda stastic olduğu için bu sınıfa bu şekilde erişim yapılmaz.
             //Islemler ıslemler = new Islemler();
 
 
         }
     }
     //statik olmayan class lar içerisindeki nesneye özgü iken.
-    //Onun içerisindeki statik olmayan üyseler,
-    //o sınıfn nesnelerine özel set'leniyo ve get'leniyoken,
-    //bir sınıf içerisinde statik olan üyeler sınıf bazında atanır
+    //Onun içerisindeki statik olmayan üyeler,
+    //O sınıfın nesnelerine özel set'leniyo ve get'leniyoken,
+    //Bir sınıf içerisinde statik olan üyeler sınıf bazında atanır
     class Calisan//bir sınıfı statik yaparsanız grubun tüm üyeleri static olması gerekir.
     {               
         private static int calisanSayisi;
@@ -59,18 +59,22 @@ namespace CSharp.Ders._26
         }
                
     }
-
     static class Islemler
-    {
+    {   
+        
         public static long Topla(int sayi1, int sayi2)
         {
             return sayi1 + sayi2;
+            
         }
 
         public static long Cıkar(int sayi1, int sayi2)
         {
             return sayi1 - sayi2;
         }
+
     }
+
+    
 
 }

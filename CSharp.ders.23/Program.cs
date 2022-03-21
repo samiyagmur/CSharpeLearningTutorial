@@ -71,8 +71,8 @@ namespace CSharp.ders._23
 //Kurucu metotlar:Bir sınıfın nesnesi oluşturulduğunda yani new ile yeni bir nesne oluşturulduğunuz da
 ////arka planda otmatik olarak çalışan metotlardır
 ///dolayısı ile bir nesne oluşturulduğunda otamatikmen arka planda yapılmasını istediğimiz bir nesne ayağa kalktığında
-///varsa biz bunu kurucu metotlarla constacterlarla yapılırız
-///Bir kurucu metot sınıf isimle aynı olmak zorundandı.classınla aynı olmak zorunda ismi
+///varsa biz bunu kurucu metotlarla constracterlarla yaparız
+///Bir kurucu metot sınıf isimle aynı olmak zorundandı.İsmi bulunduğu classla aynı olmak zorunda.
 ///kuru metotların erişim belirteçleri public olmak zorundadır
 ///kurucu metotların geri dönüşleri yoktur
 ///kuru fonsiyonların geri dönüş tipini yazmıyoruz

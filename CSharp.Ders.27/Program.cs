@@ -11,7 +11,7 @@ namespace CSharp.Ders._27
             //dikdortgen.KisaKenar = 3;
             //dikdortgen.UzunKenar = 4;
             Console.WriteLine("Class Alan Hesabı  :{0}", dikdortgen.AlanHesapla());
-            //Classlardaki fieldlara değer atamadığımız taktirde başlangıç(initial,int= 0,bool=false vb.) atamsı vardır.
+            //Classlardaki fieldlara değer atamadığımız taktirde başlangıçta(initial,int= 0,bool=false vb.)gib ataması yapılmıştır.
             //Dikdortgen_Struct dikdortgen_struct;//bu şekildede tanımlama yapabiliriz
             //Fakat struct fieldlara başlangıç (initial) atama yapmaz.Eğer bir üst satırdaki gibi tanımlama yaparsak.
             Dikdortgen_Struct dikdortgen_struct = new Dikdortgen_Struct(3,4);

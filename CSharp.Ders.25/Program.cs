@@ -30,7 +30,8 @@ namespace CSharp.Ders._25
 
 
     class Ogrenci//kontrollü bir şekilde açmak için public proporty oluşturmak gerekir.ctrl+. basınız kısayolu için
-    {
+    {   //field:Bu arkadaşlar banka içerisinde kapalı tutulan kasalar gibidir.İçlerine bakabilmek yada birşeyle koyabilmek için bir banka görevlisi yanınıza taşıması gerekir.
+        //Bu taşıma işlemini yapan diğer arkadaşsa proportylerdir.
         private string isim;
 
         private string soyisim;
