@@ -12,22 +12,60 @@ namespace Telefon.Rehberi.Uygulaması
 
         static void Main(string[] args)
         {
-
-
             var kayit = new Rehber();
+            while (true) 
+            {
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz :)");
+                Console.WriteLine("*******************************************");
+                Console.WriteLine("(1) Yeni Numara Kaydetmek");
+                Console.WriteLine("(2) Varolan Numarayı Silmek");
+                Console.WriteLine("(3) Varolan Numarayı Güncelleme");
+                Console.WriteLine("(4) Rehberi Listelemek");
+                Console.WriteLine("(5) Rehberde Arama Yapmak﻿");
+                Console.WriteLine("(6) Rehberi kapamak");
 
-            //kayit.Kayit();
+                short islem=Convert.ToInt16(Console.ReadLine());
 
-            //kayit.Sil();
-            kayit.Arama();
+                switch (islem)
+                {   
+                    case 1:
+                        kayit.Kayit();
+                        break;
 
+                    case 2:
+                        kayit.Sil();
+                        break;
+
+                    case 3:
+                        kayit.Guncelle();
+                        break;
+
+                    case 4:
+                        kayit.Listele();
+                        break;
+
+                    case 5:
+                        kayit.Arama();
+                        break;
+                    case 6:
+                        return;
+                    default:
+                        Console.WriteLine("Yalnış işlem numarası girdiniz!!!");
+                        break;
+                }
+
+      
+                
+            }
             Console.ReadKey();
-
         }
     }
+
+
     public class Rehber
     {
-
+       
         private string ad;
         private string soyad;
         private string numara;
@@ -46,18 +84,23 @@ namespace Telefon.Rehberi.Uygulaması
                 new Rehber { Ad="YILMAZ", Soyad="GÜNEY",Numara=  "5068469214" }
         };
 
-        
+
 
         public  void Kayit()
-        {   
-            Ad = "sezai";// Console.ReadLine();
-            Soyad = "karakoc";// Console.ReadLine();
-            Numara = "5456895241";// Console.ReadLine();
+        {
+            Console.Write("Lütfen isim giriniz             :");
+            Ad =Console.ReadLine();
+            Console.Write("Lütfen soyisim giriniz          :");
+            Soyad =Console.ReadLine();
+            Console.Write("Lütfen telefon numarası giriniz :");
+            Numara =Console.ReadLine();
 
             Kisisler.Add(new Rehber { Ad = Ad, Soyad = Soyad, Numara= Numara });
             
 
         }
+
+
 
         public void Sil()
         {
@@ -66,6 +109,7 @@ namespace Telefon.Rehberi.Uygulaması
 
             while (true)
             {
+                Console.Write("Lütfen numarasını silmek istediğiniz kişinin adını ve soyadını giriniz:");
                 Ad = Console.ReadLine();
                 Soyad = Console.ReadLine();
                 
@@ -121,10 +165,10 @@ namespace Telefon.Rehberi.Uygulaması
                 
         }
 
+
+
         public void Guncelle()
         {
-
-
 
             while (true)
             {
@@ -138,7 +182,7 @@ namespace Telefon.Rehberi.Uygulaması
                 if (listendeAdVarmi != null && listedeSoyadVarmi != null)
                 {
                     var listedeAdVarmiIndex = Kisisler.IndexOf(listendeAdVarmi);
-                    Console.WriteLine($"{listedeAdVarmiIndex}isimli kişi rehberden güncellmek üzere, onaylıyor musunuz ?(y/n)");
+                    Console.WriteLine($"{listedeAdVarmiIndex}isimli kişinin numarasını rehberden güncellemek üzere, onaylıyor musunuz ?(y/n)");
                     string onay = Console.ReadLine();
                     switch (onay.ToUpper())
                     {
@@ -175,26 +219,73 @@ namespace Telefon.Rehberi.Uygulaması
             }
 
         }
-        public void RehberiListele()
-        {
+
+
+        public void Listele()
+        {       
             Console.WriteLine("Telefon Rehberi");
             Console.WriteLine("**********************************************");
 
-
+            var lts = new List<string>();
+            
 
             for (int i = 0; i < Kisisler.Count; i++)
-            {
-                Console.WriteLine("isim:{0}",Kisisler[i].Ad);
-                Console.WriteLine("Soyisim:{0}",Kisisler[i].Soyad);
-                Console.WriteLine("Telefon Numarası:{0}", Kisisler[i].numara);
-                Console.WriteLine("-");
+            {   
 
+                lts.Add(Kisisler[i].Ad);
+ 
             }
+            
+            lts.Sort();
+
+            for (int j = 0; j < Kisisler.Count; j++)//Kisisler[0]=Kisisler[3]
+            {
+                string ff = lts[j];
+                var listedeSoyadVarmi = Kisisler.Find(i => i.Ad == ff);
+                var listedeAdVarmiIndex = Kisisler.IndexOf(listedeSoyadVarmi);
+                var swap = Kisisler[j];
+                Kisisler[j] = Kisisler[listedeAdVarmiIndex];
+                Kisisler[listedeAdVarmiIndex]= swap;
+            }
+            
+            Console.WriteLine("Liste sıralması yolunu seçiniz:A->Z için {1},Z->A için {2}");
+            int islem = Convert.ToInt32(Console.ReadLine());
+
+            switch (islem)
+            {   
+                case 1:
+                    for (int i = 0; i < Kisisler.Count; i++)
+                    {
+                        Console.WriteLine("isim:{0}", Kisisler[i].Ad);
+                        Console.WriteLine("Soyisim:{0}", Kisisler[i].Soyad);
+                        Console.WriteLine("Telefon Numarası:{0}", Kisisler[i].numara);
+                        Console.WriteLine("-");
+                    }
+                    break;
+
+                case 2:
+                    Kisisler.Reverse();
+                    for (int i = 0; i < Kisisler.Count; i++)
+                    {
+                        Console.WriteLine("isim:{0}", Kisisler[i].Ad);
+                        Console.WriteLine("Soyisim:{0}", Kisisler[i].Soyad);
+                        Console.WriteLine("Telefon Numarası:{0}", Kisisler[i].numara);
+                        Console.WriteLine("-");
+                    }
+                    break;
+                default:
+                    break;
+            }
+            
+                   
+            
 
         }
+
+
         public void Arama()
         {
-            char dd = Kisisler[0].Ad.
+            
             Console.WriteLine(" Arama yapmak istediğiniz tipi seçiniz.");
             Console.WriteLine("**********************************************");
             Console.WriteLine("İsim ve Soyisime göre arama yapmak için: (1)");
