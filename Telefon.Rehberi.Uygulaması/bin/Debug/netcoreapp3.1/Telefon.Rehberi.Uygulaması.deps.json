@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Telefon.Rehberi.Uygulaması/1.0.0": {
+        "runtime": {
+          "Telefon.Rehberi.Uygulaması.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Telefon.Rehberi.Uygulaması/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
