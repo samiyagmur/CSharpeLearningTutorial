@@ -18,7 +18,8 @@ namespace Telefon.Rehberi.Uygulaması
 
             //kayit.Kayit();
 
-            kayit.Sil();
+            //kayit.Sil();
+            kayit.Arama();
 
             Console.ReadKey();
 
@@ -67,7 +68,7 @@ namespace Telefon.Rehberi.Uygulaması
             {
                 Ad = Console.ReadLine();
                 Soyad = Console.ReadLine();
-                //Numara = Console.ReadLine();
+                
 
                 var listendeAdVarmi =Kisisler.Find(i=>i.Ad==Ad);
                 var listedeSoyadVarmi = Kisisler.Find(i => i.Soyad == Soyad);
@@ -76,10 +77,25 @@ namespace Telefon.Rehberi.Uygulaması
                 bool soyadVarmi = Kisisler.Contains(listedeSoyadVarmi);
 
                 if (adVarmi == true && soyadVarmi== true)
-                {
+                {   
                     var listedeAdVarmiIndex = Kisisler.IndexOf(listendeAdVarmi);
-                    Kisisler.Remove(Kisisler[listedeAdVarmiIndex]);
+                    Console.WriteLine($"{listedeAdVarmiIndex}isimli kişi rehberden silinmek üzere, onaylıyor musunuz ?(y/n)");
+                    string onay = Console.ReadLine();
+                    switch (onay.ToUpper())
+                    {
+                        case "Y":
+                            Kisisler.Remove(Kisisler[listedeAdVarmiIndex]);
+                            break;
+                        case "N":
+                            break;
+                        default:
+                            break;
+                    }
+                    
+                    
+                    
                     break;
+
                 }
                 else
                 {
@@ -96,12 +112,146 @@ namespace Telefon.Rehberi.Uygulaması
                         default:
                             break;
                     }
+
                     
                    
         
                 }
             }
                 
+        }
+
+        public void Guncelle()
+        {
+
+
+
+            while (true)
+            {
+                Ad = Console.ReadLine();
+                Soyad = Console.ReadLine();
+
+
+                var listendeAdVarmi = Kisisler.Find(i => i.Ad == Ad);
+                var listedeSoyadVarmi = Kisisler.Find(i => i.Soyad == Soyad);
+
+                if (listendeAdVarmi != null && listedeSoyadVarmi != null)
+                {
+                    var listedeAdVarmiIndex = Kisisler.IndexOf(listendeAdVarmi);
+                    Console.WriteLine($"{listedeAdVarmiIndex}isimli kişi rehberden güncellmek üzere, onaylıyor musunuz ?(y/n)");
+                    string onay = Console.ReadLine();
+                    switch (onay.ToUpper())
+                    {
+                        case "Y":
+                            Kisisler[listedeAdVarmiIndex].Numara =Console.ReadLine();
+                            break;
+                        case "N":
+                            break;
+                        default:
+                            break;
+                    }
+
+
+
+                    break;
+
+                }
+                else
+                {
+                    Console.WriteLine("Aradığınız krtiterlere uygun veri rehberde bulunamadı. Lütfen bir seçim yapınız.");
+                    Console.WriteLine("Silmeyi sonlandırmak için : (1)");
+                    Console.WriteLine("İşeme devam etmek için : (2)");
+                    int islem = Convert.ToInt32(Console.ReadLine());
+                    switch (islem)
+                    {
+                        case 1:
+                            break;
+                        case 2:
+
+                        default:
+                            break;
+                    }
+                }
+            }
+
+        }
+        public void RehberiListele()
+        {
+            Console.WriteLine("Telefon Rehberi");
+            Console.WriteLine("**********************************************");
+
+
+
+            for (int i = 0; i < Kisisler.Count; i++)
+            {
+                Console.WriteLine("isim:{0}",Kisisler[i].Ad);
+                Console.WriteLine("Soyisim:{0}",Kisisler[i].Soyad);
+                Console.WriteLine("Telefon Numarası:{0}", Kisisler[i].numara);
+                Console.WriteLine("-");
+
+            }
+
+        }
+        public void Arama()
+        {
+            char dd = Kisisler[0].Ad.
+            Console.WriteLine(" Arama yapmak istediğiniz tipi seçiniz.");
+            Console.WriteLine("**********************************************");
+            Console.WriteLine("İsim ve Soyisime göre arama yapmak için: (1)");
+            Console.WriteLine("Telefon numarasına göre arama yapmak için: (2)");
+            int islem = Convert.ToInt32(Console.ReadLine());
+            switch (islem)
+            {
+                case 1:
+                    Ad = Console.ReadLine();
+                    Soyad = Console.ReadLine();
+
+                    var listendeAdVarmi = Kisisler.Find(i => i.Ad == Ad);
+                    var listedeSoyadVarmi = Kisisler.Find(i => i.Soyad == Soyad);
+                    var listedeAdVarmiIndex = Kisisler.IndexOf(listendeAdVarmi);
+                    var listedeSoyadVarmiIndex = Kisisler.IndexOf(listedeSoyadVarmi);
+
+                    if (listendeAdVarmi != null && listedeSoyadVarmi != null)
+                    {
+                        Console.WriteLine("isim:{0}", Kisisler[listedeAdVarmiIndex].Ad);
+                        Console.WriteLine("Soyisim:{0}", Kisisler[listedeAdVarmiIndex].Soyad);
+                        Console.WriteLine("Telefon Numarası:{0}", Kisisler[listedeAdVarmiIndex].numara);
+                        Console.WriteLine("-");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Aradığınız kişi rehberde yoktur.");
+                    }
+
+                    break;
+                
+                case 2:
+                    
+                    Numara = Console.ReadLine();
+                    var listendeNumaraVarmi = Kisisler.Find(i => i.Numara == Numara);
+                    var listedeNumaraVarmiIndex = Kisisler.IndexOf(listendeNumaraVarmi);
+                    
+                    if (listendeNumaraVarmi != null)
+                    {
+                        Console.WriteLine("isim:{0}", Kisisler[listedeNumaraVarmiIndex].Ad);
+                        Console.WriteLine("Soyisim:{0}", Kisisler[listedeNumaraVarmiIndex].Soyad);
+                        Console.WriteLine("Telefon Numarası:{0}", Kisisler[listedeNumaraVarmiIndex].numara);
+                        Console.WriteLine("-");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Aradığınız kişi rehberde yoktur.");
+                    }
+                    
+
+
+                    break;
+
+                default:
+                    break;
+            }
         }
 
     }
