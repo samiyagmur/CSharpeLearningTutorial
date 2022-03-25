@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Telefon.Rehberi.Uygulaması
 {
@@ -15,7 +16,7 @@ namespace Telefon.Rehberi.Uygulaması
 
             var kayit = new Rehber();
 
-            
+            //kayit.Kayit();
 
             kayit.Sil();
 
@@ -30,18 +31,18 @@ namespace Telefon.Rehberi.Uygulaması
         private string soyad;
         private string numara;
         
-        public string Ad { get => ad; set => ad = value; }
-        public string Soyad { get => soyad; set => soyad = value; }
+        public string Ad { get => ad; set => ad = value.ToUpper(); }
+        public string Soyad { get => soyad; set => soyad = value.ToUpper(); }
         public string Numara { get => numara; set => numara = value; }
 
 
-        public static Dictionary<Rehber,string> Kisisler = new Dictionary<Rehber, string>()
+        public static List<Rehber> Kisisler = new List<Rehber>()
         {
-                { new Rehber { Ad="Sami", Soyad="Yagmur" }, "5384786958"  },
-                { new Rehber { Ad="Kemal", Soyad ="Sunal" }, "5384768214"   },
-                { new Rehber { Ad="Halit", Soyad="Akçatepe"},  "5428469472" },
-                { new Rehber { Ad="Tarık", Soyad="Akan"},  "5451649721" },
-                { new Rehber { Ad="Yılmaz", Soyad="Güney"},  "5068469214" }
+                new Rehber { Ad="SAMİ", Soyad="YAGMUR" ,Numara= "5384786958"  },
+                new Rehber { Ad="KEMAL", Soyad ="SUNAL" ,Numara= "5384768214"   },
+                new Rehber { Ad="HALİT", Soyad="AKÇATEPE",Numara=  "5428469472" },
+                new Rehber { Ad="TARIK", Soyad="AKAN",Numara=  "5451649721" },
+                new Rehber { Ad="YILMAZ", Soyad="GÜNEY",Numara=  "5068469214" }
         };
 
         
@@ -51,51 +52,53 @@ namespace Telefon.Rehberi.Uygulaması
             Ad = "sezai";// Console.ReadLine();
             Soyad = "karakoc";// Console.ReadLine();
             Numara = "5456895241";// Console.ReadLine();
-            var dd = Kisisler;
-            dd.Add(new Rehber { Ad = Ad, Soyad = Soyad },Numara);
+
+            Kisisler.Add(new Rehber { Ad = Ad, Soyad = Soyad, Numara= Numara });
+            
 
         }
 
         public void Sil()
         {
+            
 
-            var kisilerMuhurleme = Kisisler;
+
             while (true)
             {
                 Ad = Console.ReadLine();
                 Soyad = Console.ReadLine();
+                //Numara = Console.ReadLine();
 
+                var listendeAdVarmi =Kisisler.Find(i=>i.Ad==Ad);
+                var listedeSoyadVarmi = Kisisler.Find(i => i.Soyad == Soyad);
                 
-                foreach (var item in kisilerMuhurleme)
-                {
-                    kisilerMuhurleme.ContainsKey({ Ad = Ad, Soyad = Soyad });
-                }
+                bool adVarmi = Kisisler.Contains(listendeAdVarmi);
+                bool soyadVarmi = Kisisler.Contains(listedeSoyadVarmi);
 
-                foreach()   
-
-                if (parametreVarmi == true)
+                if (adVarmi == true && soyadVarmi== true)
                 {
-                    kisilerMuhurleme.Remove(new Rehber { Ad = Ad, Soyad = Soyad });
+                    var listedeAdVarmiIndex = Kisisler.IndexOf(listendeAdVarmi);
+                    Kisisler.Remove(Kisisler[listedeAdVarmiIndex]);
                     break;
                 }
                 else
                 {
                     Console.WriteLine("Aradığınız krtiterlere uygun veri rehberde bulunamadı. Lütfen bir seçim yapınız.");
                     Console.WriteLine("Silmeyi sonlandırmak için : (1)");
-                    Console.WriteLine("Silmeyi sonlandırmak için : (2)");
+                    Console.WriteLine("İşeme devam etmek için : (2)");
                     int islem =Convert.ToInt32(Console.ReadLine());
                     switch (islem)
                     {   
                         case 1:
                             break;
                         case 2:
-
+        
                         default:
                             break;
                     }
                     
                    
-
+        
                 }
             }
                 
