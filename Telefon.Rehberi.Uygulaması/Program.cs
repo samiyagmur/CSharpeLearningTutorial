@@ -5,11 +5,8 @@ using System.Linq;
 
 namespace Telefon.Rehberi.Uygulaması
 {
-    
     internal class Program
     {
-        
-
         static void Main(string[] args)
         {
             var kayit = new Rehber();
@@ -24,7 +21,7 @@ namespace Telefon.Rehberi.Uygulaması
                 Console.WriteLine("(4) Rehberi Listelemek");
                 Console.WriteLine("(5) Rehberde Arama Yapmak﻿");
                 Console.WriteLine("(6) Rehberi kapamak");
-
+                
                 short islem=Convert.ToInt16(Console.ReadLine());
 
                 switch (islem)
@@ -48,20 +45,18 @@ namespace Telefon.Rehberi.Uygulaması
                     case 5:
                         kayit.Arama();
                         break;
+
                     case 6:
                         return;
+
                     default:
                         Console.WriteLine("Yalnış işlem numarası girdiniz!!!");
                         break;
                 }
-
-      
-                
             }
             Console.ReadKey();
         }
     }
-
 
     public class Rehber
     {
@@ -84,8 +79,6 @@ namespace Telefon.Rehberi.Uygulaması
                 new Rehber { Ad="YILMAZ", Soyad="GÜNEY",Numara=  "5068469214" }
         };
 
-
-
         public  void Kayit()
         {
             Console.Write("Lütfen isim giriniz             :");
@@ -99,8 +92,6 @@ namespace Telefon.Rehberi.Uygulaması
             
 
         }
-
-
 
         public void Sil()
         {
@@ -129,16 +120,17 @@ namespace Telefon.Rehberi.Uygulaması
                     {
                         case "Y":
                             Kisisler.Remove(Kisisler[listedeAdVarmiIndex]);
-                            break;
+                            return;
                         case "N":
-                            break;
+                            return;
                         default:
+                            Console.WriteLine("Yalnış işlem  girişi yaptınız!!!");
                             break;
                     }
                     
                     
                     
-                    break;
+                    
 
                 }
                 else
@@ -150,22 +142,18 @@ namespace Telefon.Rehberi.Uygulaması
                     switch (islem)
                     {   
                         case 1:
-                            break;
+                            return;
                         case 2:
-        
+                            break;
                         default:
                             break;
                     }
 
-                    
-                   
         
                 }
             }
                 
         }
-
-
 
         public void Guncelle()
         {
@@ -188,14 +176,12 @@ namespace Telefon.Rehberi.Uygulaması
                     {
                         case "Y":
                             Kisisler[listedeAdVarmiIndex].Numara =Console.ReadLine();
-                            break;
+                            return;
                         case "N":
-                            break;
+                            return;
                         default:
                             break;
                     }
-
-
 
                     break;
 
@@ -211,7 +197,7 @@ namespace Telefon.Rehberi.Uygulaması
                         case 1:
                             break;
                         case 2:
-
+                            break;
                         default:
                             break;
                     }
@@ -219,7 +205,6 @@ namespace Telefon.Rehberi.Uygulaması
             }
 
         }
-
 
         public void Listele()
         {       
@@ -281,7 +266,6 @@ namespace Telefon.Rehberi.Uygulaması
             
 
         }
-
 
         public void Arama()
         {
