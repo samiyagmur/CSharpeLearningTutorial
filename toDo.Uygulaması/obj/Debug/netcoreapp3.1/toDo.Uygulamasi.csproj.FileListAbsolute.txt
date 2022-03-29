@@ -1,0 +1,14 @@
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\bin\Debug\netcoreapp3.1\toDo.Uygulamasi.exe
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\bin\Debug\netcoreapp3.1\toDo.Uygulamasi.deps.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\bin\Debug\netcoreapp3.1\toDo.Uygulamasi.runtimeconfig.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\bin\Debug\netcoreapp3.1\toDo.Uygulamasi.runtimeconfig.dev.json
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\bin\Debug\netcoreapp3.1\toDo.Uygulamasi.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\bin\Debug\netcoreapp3.1\toDo.Uygulamasi.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.csproj.AssemblyReference.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.AssemblyInfoInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.AssemblyInfo.cs
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.csproj.CoreCompileInputs.cache
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.dll
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.pdb
+C:\Users\samiy\OneDrive\Masaüstü\CSharpeLearningTutorial\toDo.Uygulaması\obj\Debug\netcoreapp3.1\toDo.Uygulamasi.genruntimeconfig.cache
