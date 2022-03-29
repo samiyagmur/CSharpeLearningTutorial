@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\toDo.Uygulaması\\toDo.Uygulamasi.csproj": {}
+    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\ToDo.Uygulaması\\toDo.Uygulamasi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\toDo.Uygulaması\\toDo.Uygulamasi.csproj": {
+    "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\ToDo.Uygulaması\\toDo.Uygulamasi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\toDo.Uygulaması\\toDo.Uygulamasi.csproj",
+        "projectUniqueName": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\ToDo.Uygulaması\\toDo.Uygulamasi.csproj",
         "projectName": "toDo.Uygulamasi",
-        "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\toDo.Uygulaması\\toDo.Uygulamasi.csproj",
+        "projectPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\ToDo.Uygulaması\\toDo.Uygulamasi.csproj",
         "packagesPath": "C:\\Users\\samiy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\toDo.Uygulaması\\obj\\",
+        "outputPath": "C:\\Users\\samiy\\OneDrive\\Masaüstü\\CSharpeLearningTutorial\\ToDo.Uygulaması\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
