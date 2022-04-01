@@ -18,60 +18,53 @@ x64/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-*_i.c
-*_p.c
-*_i.h
-*.ilk
-*.meta
-*.obj
-*.pch
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp
-*.tmp_proj
-*.log
-*.vspscc
-*.vssscc
-.builds
-*.pidb
-*.log
-*.svclog
-*.scc
+_i.c
+_p.c
+_i.h
+.ilk
+.meta
+.obj
+.pch
+.pdb
+.pgc
+.pgd
+.rsp
+.sbr
+.tlb
+.tli
+.tlh
+.tmp
+.tmp_proj
+.log
+.vspscc
+.vssscc
+builds
+.pidb
+.log
+.svclog
+.scc
 
-# Visual C++ cache files
-ipch/
-*.aps
-*.ncb
-*.opensdf
-*.sdf
-*.cachefile
 
 # Visual Studio profiler
-*.psess
-*.vsp
-*.vspx
+.psess
+.vsp
+.vspx
 
 # Guidance Automation Toolkit
-*.gpState
+.gpState
 
 # ReSharper is a .NET coding add-in
 _ReSharper*/
-*.[Rr]e[Ss]harper
-*.DotSettings.user
+.[Rr]e[Ss]harper
+.DotSettings.user
 
 # Click-Once directory
 publish/
 
 # Publish Web Output
-*.Publish.xml
-*.pubxml
-*.azurePubxml
+.Publish.xml
+.pubxml
+.azurePubxml
 
 # NuGet Packages Directory
 ## TODO: If you have NuGet Package Restore enabled, uncomment the next line
@@ -81,23 +74,23 @@ packages/
 
 # Windows Azure Build Output
 csx/
-*.build.csdef
+.build.csdef
 
 # Windows Store app package directory
 AppPackages/
 
 # Others
 sql/
-*.Cache
+.Cache
 ClientBin/
 [Ss]tyle[Cc]op.*
 ![Ss]tyle[Cc]op.targets
 ~$*
-*~
-*.dbmdl
-*.[Pp]ublish.xml
+~
+.dbmdl
+.[Pp]ublish.xml
 
-*.publishsettings
+.publishsettings
 
 # RIA/Silverlight projects
 Generated_Code/
