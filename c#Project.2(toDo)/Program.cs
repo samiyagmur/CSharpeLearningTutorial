@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace toDo.Uygulamasi
+namespace ToDo.App
 {
     public class Program
     {   
@@ -11,9 +11,9 @@ namespace toDo.Uygulamasi
             
             
             Methods methods = new Methods();
-            List<KartBilgileri> getToDo = KartBilgileri.todo;
-            List<KartBilgileri> getInProgress = KartBilgileri.inProgress;
-            List<KartBilgileri> getDone = KartBilgileri.done;
+            List<CardInformation> getToDo = CardInformation.todo;
+            List<CardInformation> getInProgress = CardInformation.inProgress;
+            List<CardInformation> getDone = CardInformation.done;
             short choseOperatingCard;
 
 
@@ -128,9 +128,9 @@ namespace toDo.Uygulamasi
                                   + "İşlem=");
                         short tasınacakKartSecim = Convert.ToInt16(Console.ReadLine());
                         methods.EnterYouTitle();
-                        KartBilgileri isThereToDoList = getToDo.Find(x => x.Title == methods.Title);
-                        KartBilgileri isThereProgressList = getInProgress.Find(x => x.Title == methods.Title);
-                        KartBilgileri isThereDoneList = getDone.Find(x => x.Title == methods.Title);
+                        CardInformation isThereToDoList = getToDo.Find(x => x.Title == methods.Title);
+                        CardInformation isThereProgressList = getInProgress.Find(x => x.Title == methods.Title);
+                        CardInformation isThereDoneList = getDone.Find(x => x.Title == methods.Title);
 
                         if (isThereToDoList != null)
                         {   

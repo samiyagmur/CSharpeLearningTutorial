@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
-namespace toDo.Uygulamasi
+namespace ToDo.App
 {
-    public class KartBilgileri:Program
+    public class CardInformation:Program
     {
         private string title;
         private string scope;
@@ -19,19 +19,19 @@ namespace toDo.Uygulamasi
         public string Size { get => size; set => size = value; }
         public string Member { get => member; set => member = value; }
 
-        public static List<KartBilgileri> todo = new List<KartBilgileri>()
+        public static List<CardInformation> todo = new List<CardInformation>()
         {
-            new KartBilgileri() {Title="Bozkart",Scope="Otobüs Kartı",Size="xL",Member="Sami Yagmur"}
+            new CardInformation() {Title="Bozkart",Scope="Otobüs Kartı",Size="xL",Member="Sami Yagmur"}
         };
 
-        public static List<KartBilgileri> inProgress = new List<KartBilgileri>()
+        public static List<CardInformation> inProgress = new List<CardInformation>()
         {
-            new KartBilgileri() {Title="Ankart",Scope="Otobüs Kartı",Size="xL",Member="Fırat Kaya"}
+            new CardInformation() {Title="Ankart",Scope="Otobüs Kartı",Size="xL",Member="Fırat Kaya"}
         };
 
-        public static List<KartBilgileri> done = new List<KartBilgileri>()
+        public static List<CardInformation> done = new List<CardInformation>()
         {
-            new KartBilgileri() {Title="Denkart",Scope="Otobüs Kartı",Size="xL",Member="Yılmaz Sağlam"}
+            new CardInformation() {Title="Denkart",Scope="Otobüs Kartı",Size="xL",Member="Yılmaz Sağlam"}
         };
 
         public enum KartBoyutları

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 
-namespace toDo.Uygulamasi
+namespace ToDo.App
 {
-    public class Methods: KartBilgileri
+    public class Methods: CardInformation
     {   
         public void GetCardInformations()
         {   
@@ -61,13 +61,13 @@ namespace toDo.Uygulamasi
             short choseOperationCard = Convert.ToInt16(Console.ReadLine());
             return choseOperationCard;
         }
-        public void Add(List<KartBilgileri> getOperationList)
+        public void Add(List<CardInformation> getOperationList)
         {
             GetCardInformations();
-            KartBilgileri controlMemberToLists = getOperationList.Find(x => x.Member == Member);
+            CardInformation controlMemberToLists = getOperationList.Find(x => x.Member == Member);
             if (controlMemberToLists == null)
             {
-                getOperationList.Add(new KartBilgileri()
+                getOperationList.Add(new CardInformation()
                 {
                     Title = Title,
                     Scope = Scope,
@@ -81,7 +81,7 @@ namespace toDo.Uygulamasi
             }
 
         }
-        public void Remove(List<KartBilgileri> getOperationList)
+        public void Remove(List<CardInformation> getOperationList)
         {
             EnterYouTitle();
             var controlMemberToLists = getOperationList.Find(x => x.Title == Title);
@@ -98,7 +98,7 @@ namespace toDo.Uygulamasi
             }
 
         }
-        public void Update(List<KartBilgileri> getOperationList)
+        public void Update(List<CardInformation> getOperationList)
         {
             GetCardInformations();
             var controlMemberToLists = getOperationList.Find(x => x.Title == Title);
@@ -108,7 +108,7 @@ namespace toDo.Uygulamasi
                 int getMamberIndex = getOperationList.IndexOf(controlMemberToLists);
                 getOperationList.RemoveAt(getMamberIndex);
 
-                getOperationList.Insert(getMamberIndex, new KartBilgileri()
+                getOperationList.Insert(getMamberIndex, new CardInformation()
                 {
                     Title = Title,
                     Scope = Scope,
@@ -124,13 +124,13 @@ namespace toDo.Uygulamasi
 
         }
 
-        public void Move (List<KartBilgileri> getOperationList, List<KartBilgileri> whichListMoveCardInformation, KartBilgileri toFindMemberİnOperationList)
+        public void Move (List<CardInformation> getOperationList, List<CardInformation> whichListMoveCardInformation, CardInformation toFindMemberİnOperationList)
         {
                 
             int getMamberIndex = getOperationList.IndexOf(toFindMemberİnOperationList);
             getOperationList.RemoveAt(getMamberIndex);
             GetCardInformations();
-            whichListMoveCardInformation.Add( new KartBilgileri()
+            whichListMoveCardInformation.Add( new CardInformation()
                 {
                     Title = Title,
                     Scope = Scope,
@@ -139,7 +139,7 @@ namespace toDo.Uygulamasi
                 });
            
         }
-        public void Listing(List<KartBilgileri> whichCardListing)
+        public void Listing(List<CardInformation> whichCardListing)
         {
 
             //for (int i = 0; i < listelenecekKart.Count; i++)
