@@ -9,12 +9,12 @@ namespace Koleksiyonlar_Soru_3
     {
         static void Main(string[] args)
         {
-            Alfabe alfabe = new Alfabe();//metot çağırma
+            Alfabe alphabet = new Alfabe();//callTheMethod
             Console.WriteLine("Lütfen sesli harflerini sıralamak istediğiniz satırı giriniz: ");
-            string cumle = Console.ReadLine();
-            foreach (string j in alfabe.AlfabeSesli())//girdiğimiz ifadeye göre sesli haftleri karşılaştırma.
+            string sentence = Console.ReadLine();
+            foreach (string j in alphabet.alfabeSesli())//Contrast vowel as my input
             {
-                if (cumle.Contains(j) == true)
+                if (sentence.Contains(j) == true)
                 {
                     Console.WriteLine("Sırasıyla sesli harfleriniz: "+j);
                     
@@ -28,11 +28,11 @@ namespace Koleksiyonlar_Soru_3
     class Alfabe
     {   
             
-        public ArrayList AlfabeSesli()
+        public ArrayList alfabeSesli()
         {   
           
             
-            Dictionary<string, string> harfler = new Dictionary<string, string>()//sesli harfleri tanımlayalım
+            Dictionary<string, string> letters = new Dictionary<string, string>()//We tell vowel to the program.cs
             {
                 { "a", "sesli"},{"e", "sesli"},
                 { "ı", "sesli"},{"i", "sesli"},
@@ -40,9 +40,9 @@ namespace Koleksiyonlar_Soru_3
                 { "u", "sesli"},{"ü", "sesli"}
                 
             };
-            ArrayList arr1 = new ArrayList();//Sesli harfleri sakşayacacağınız diziyi 
-            //var sesli = new List<string>();
-            foreach (var s in harfler)//sesli harfeleri diziye ekleme
+            ArrayList arr1 = new ArrayList();//We keep them
+            
+            foreach (var s in letters)//We add them
             {
                 arr1.Add(s.Key);
             }
