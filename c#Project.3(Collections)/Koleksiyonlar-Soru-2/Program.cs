@@ -7,35 +7,35 @@ namespace Koleksiyonlar_Soru_2
         static void Main(string[] args)
         {   
             
-            int girilenSayilar = 7;
-            int[] arr = new int[girilenSayilar];
+            
+            int[] arr = new int[7];
 
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write($"Lütfen {i + 1}. sayıyı giriniz: ");
-                int girilenSayi = Convert.ToInt32(Console.ReadLine());
-                arr[i] = girilenSayi;
+                int number = Convert.ToInt32(Console.ReadLine());
+                arr[i] = number;
             }
             Console.WriteLine();
             Array.Sort(arr);
-            int ilkUcOrt = IlkveSonUc(arr);
-            Console.Write("Girilen en küçük üç sayının ortalaması: " + ilkUcOrt);
+            int firstThreeIndxAvrg = IlkveSonUc(arr);
+            Console.Write("Girilen en küçük üç sayının ortalaması: " + firstThreeIndxAvrg);
             Console.WriteLine();
             Array.Reverse(arr);
-            int sonUcOrt = IlkveSonUc(arr);
-            Console.Write("Girilen en büyük üç sayının ortalaması: " + sonUcOrt);
+            int lastThreeIndxAvrg = IlkveSonUc(arr);
+            Console.Write("Girilen en büyük üç sayının ortalaması: " + lastThreeIndxAvrg);
             Console.WriteLine();
-            Console.Write("Girilen saylarının en büyüğünün ve enküçüğünün ortalamaları toplamı: " + (ilkUcOrt + sonUcOrt));
+            Console.Write("Girilen saylarının en büyüğünün ve enküçüğünün ortalamaları toplamı: " + (firstThreeIndxAvrg + lastThreeIndxAvrg));
 
         }
 
         public static int IlkveSonUc(int[] number)
         {
-            int toplam =0;
+            int sum =0;
             for (int i = 0; i < 3; i++)
-                toplam += number[i];
-            int ort = toplam / 3;
-            return ort;
+                sum += number[i];
+            int Avrg = sum / 3;
+            return Avrg;
         }
     }
 }
