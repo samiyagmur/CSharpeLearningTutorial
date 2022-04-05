@@ -6,18 +6,33 @@ namespace toDo.Uygulamasi
 {
     public class KartBilgileri:Program
     {
-        private string baslik;
-        private string icerik;
-        private string buyukluk;
-        private string atananKisi;
+        private string title;
+        private string scope;
+        private string size;
+        private string member;
 
 
-        public string Baslik { get => baslik; set => baslik = value; }
+        public string Title { get => title; set => title = value; }
 
-        public string Icerik { get => icerik; set => icerik = value; }
+        public string Scope { get => scope; set => scope = value; }
 
-        public string Buyukluk { get => buyukluk; set => buyukluk = value; }
-        public string AtananKisi { get => atananKisi; set => atananKisi = value; }
+        public string Size { get => size; set => size = value; }
+        public string Member { get => member; set => member = value; }
+
+        public static List<KartBilgileri> todo = new List<KartBilgileri>()
+        {
+            new KartBilgileri() {Title="Bozkart",Scope="Otobüs Kartı",Size="xL",Member="Sami Yagmur"}
+        };
+
+        public static List<KartBilgileri> inProgress = new List<KartBilgileri>()
+        {
+            new KartBilgileri() {Title="Ankart",Scope="Otobüs Kartı",Size="xL",Member="Fırat Kaya"}
+        };
+
+        public static List<KartBilgileri> done = new List<KartBilgileri>()
+        {
+            new KartBilgileri() {Title="Denkart",Scope="Otobüs Kartı",Size="xL",Member="Yılmaz Sağlam"}
+        };
 
         public enum KartBoyutları
         {

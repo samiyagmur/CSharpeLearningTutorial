@@ -5,31 +5,32 @@ using System.Linq;
 
 namespace toDo.Uygulamasi
 {
-    public class Methods: Done
+    public class Methods: KartBilgileri
     {   
-        public void DegerGir()
+        public void GetCardInformations()
         {   
             
             Console.WriteLine("Lütfen işlem yapmak istediğiniz kişinin kart bilgilerini giriniz.");
             Console.Write("Başlık      :");
-            Baslik = Console.ReadLine();
+            Title = Console.ReadLine();
             Console.Write("\nİçerik      :");
-            Icerik = Console.ReadLine();
+            Scope = Console.ReadLine();
             Console.Write("\nAtanan Kişi :");
-            AtananKisi = Console.ReadLine();
+            Member = Console.ReadLine();
             Console.Write("\nBüyüklük    :-> XS(1),S(2),M(3),L(4),XL(5)");
-            int enumdanGerit = Convert.ToInt32(Console.ReadLine());
-            Buyukluk = Enum.GetName(typeof(KartBoyutları), enumdanGerit);
+
+            int getCardSizeFromEnum = Convert.ToInt32(Console.ReadLine());
+            Size = Enum.GetName(typeof(KartBoyutları), getCardSizeFromEnum);
         }
 
-        public void DegerGirSadeceBaslik()
+        public void EnterYouTitle()
         {
             Console.WriteLine("Lütfen işlem yapmak istediğiniz kişinin kart bilgilerini giriniz.");
             Console.Write("Başlık      :");
-            Baslik = Console.ReadLine();
+            Title = Console.ReadLine();
 
         }
-        public void HataDurumu()
+        public void GetErrorSituation()
         {
             Console.WriteLine("Aradığınız kıriterlere uygun kart board'da bulunamamış olabilir." +
                               "Kart bilgileriniz güncelleme veya taşımak istediğiniz kartta zaten  mevcut olabilir." +
@@ -37,8 +38,8 @@ namespace toDo.Uygulamasi
             Console.Write("* İşlemi sonlandırmak için : (1) \n" 
                              +"* Yeniden denemek için : (2) \n"
                              +"İşlem=");
-            short islem = Convert.ToInt16(Console.ReadLine());
-            switch (islem)
+            short operation = Convert.ToInt16(Console.ReadLine());
+            switch (operation)
             {
                 case 1:
                     return;
@@ -50,107 +51,107 @@ namespace toDo.Uygulamasi
             }
         }
 
-        public short KartSecimi()
+        public short GetCardSize()
         {
             Console.Write("İşlem yapmak istediğiniz kartının başlığı giriniz:\n"
                                   + "Todo için: (1)\n"
                                   + "InProgress için: (2)\n"
                                   + "Done için: (3)\n"
                                   + "İşlem=");
-            short islemHangiKart = Convert.ToInt16(Console.ReadLine());
-            return islemHangiKart;
+            short choseOperationCard = Convert.ToInt16(Console.ReadLine());
+            return choseOperationCard;
         }
-        public void Ekle(List<KartBilgileri> islemYapılcakListe)
+        public void Add(List<KartBilgileri> getOperationList)
         {
-            DegerGir();
-            var listedeVarmi = islemYapılcakListe.Find(x => x.AtananKisi == AtananKisi);
-            if (listedeVarmi == null)
+            GetCardInformations();
+            KartBilgileri controlMemberToLists = getOperationList.Find(x => x.Member == Member);
+            if (controlMemberToLists == null)
             {
-                islemYapılcakListe.Add(new KartBilgileri()
+                getOperationList.Add(new KartBilgileri()
                 {
-                    Baslik = Baslik,
-                    Icerik = Icerik,
-                    Buyukluk = Buyukluk,
-                    AtananKisi = AtananKisi
+                    Title = Title,
+                    Scope = Scope,
+                    Size = Size,
+                    Member = Member
                 });
             }
             else
             {
-                HataDurumu();
+                GetErrorSituation();
             }
 
         }
-        public void Sil(List<KartBilgileri> islemYapılcakListe)
+        public void Remove(List<KartBilgileri> getOperationList)
         {
-            DegerGirSadeceBaslik();
-            var listedeVarmi = islemYapılcakListe.Find(x => x.Baslik == Baslik);
+            EnterYouTitle();
+            var controlMemberToLists = getOperationList.Find(x => x.Title == Title);
             
 
-            if (listedeVarmi != null)
+            if (controlMemberToLists != null)
             {
-                int baslikIndex = islemYapılcakListe.IndexOf(listedeVarmi);
-                islemYapılcakListe.RemoveAt(baslikIndex);
+                int getMamberIndex = getOperationList.IndexOf(controlMemberToLists);
+                getOperationList.RemoveAt(getMamberIndex);
             }
             else
             {
-                HataDurumu();
+                GetErrorSituation();
             }
 
         }
-        public void Guncelle(List<KartBilgileri> islemYapılcakListe)
+        public void Update(List<KartBilgileri> getOperationList)
         {
-            DegerGir();
-            var listedeVarmi = islemYapılcakListe.Find(x => x.Baslik == Baslik);
+            GetCardInformations();
+            var controlMemberToLists = getOperationList.Find(x => x.Title == Title);
             
-            if (listedeVarmi != null)
+            if (controlMemberToLists != null)
             {
-                int baslikIndex = islemYapılcakListe.IndexOf(listedeVarmi);
-                islemYapılcakListe.RemoveAt(baslikIndex);
+                int getMamberIndex = getOperationList.IndexOf(controlMemberToLists);
+                getOperationList.RemoveAt(getMamberIndex);
 
-                islemYapılcakListe.Insert(baslikIndex, new KartBilgileri()
+                getOperationList.Insert(getMamberIndex, new KartBilgileri()
                 {
-                    Baslik = Baslik,
-                    Icerik = Icerik,
-                    Buyukluk = Buyukluk,
-                    AtananKisi = AtananKisi
+                    Title = Title,
+                    Scope = Scope,
+                    Size = Size,
+                    Member = Member
                 });
 
             }
             else
             {
-                HataDurumu();
+                GetErrorSituation();
             }
 
         }
 
-        public void Tasi (List<KartBilgileri> kartınBulunduguListe, List<KartBilgileri> kartınTasinacagiListe, KartBilgileri varligiBulunanListedenGelenBaslik)
+        public void Move (List<KartBilgileri> getOperationList, List<KartBilgileri> whichListMoveCardInformation, KartBilgileri toFindMemberİnOperationList)
         {
                 
-            int baslikIndex = kartınBulunduguListe.IndexOf(varligiBulunanListedenGelenBaslik);
-            kartınBulunduguListe.RemoveAt(baslikIndex);
-            DegerGir();
-            kartınTasinacagiListe.Add( new KartBilgileri()
+            int getMamberIndex = getOperationList.IndexOf(toFindMemberİnOperationList);
+            getOperationList.RemoveAt(getMamberIndex);
+            GetCardInformations();
+            whichListMoveCardInformation.Add( new KartBilgileri()
                 {
-                    Baslik = Baslik,
-                    Icerik = Icerik,
-                    Buyukluk = Buyukluk,
-                    AtananKisi = AtananKisi
+                    Title = Title,
+                    Scope = Scope,
+                    Size = Size,
+                    Member = Member
                 });
            
         }
-        public void Listele(List<KartBilgileri> listelenecekKart)
+        public void Listing(List<KartBilgileri> whichCardListing)
         {
 
             //for (int i = 0; i < listelenecekKart.Count; i++)
             //{
             //    listelenecekKart
             //}
-            if (listelenecekKart==todo)
+            if (whichCardListing==todo)
             {
                 Console.WriteLine("TODO Line\n"
                                  + "************************");
             }
-            else if (listelenecekKart==inProgress)
+            else if (whichCardListing==inProgress)
             {
                 Console.WriteLine("IN PROGRESS Line\n"
                                  + "************************");
@@ -162,14 +163,14 @@ namespace toDo.Uygulamasi
                                  + "************************");
             }
             bool flag = false;
-            foreach (var item in listelenecekKart)
+            foreach (var item in whichCardListing)
             {
                 flag = true;
                 Console.WriteLine(
-                                  "Başlık      :"+item.Baslik
-                                + "\nİçerik      :"+item.Icerik
-                                + "\nAtanan Kişi :"+item.AtananKisi
-                                + "\nBüyüklük    :"+item.Buyukluk
+                                  "Başlık      :"+item.Title
+                                + "\nİçerik      :"+item.Scope
+                                + "\nAtanan Kişi :"+item.Member
+                                + "\nBüyüklük    :"+item.Size
                                 + "\n-");
                                 
             }

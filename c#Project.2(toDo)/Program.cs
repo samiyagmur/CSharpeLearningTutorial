@@ -8,13 +8,13 @@ namespace toDo.Uygulamasi
     {   
         static void Main(string[] args)
         {
-            KartBilgileri kartBilgileri = new KartBilgileri();
+            
             
             Methods methods = new Methods();
-            var toDo = toDoo.todo;
-            var inProgress = InProgress.inProgress;
-            var done =Done.done;
-            short islemHangiKart;
+            List<KartBilgileri> getToDo = KartBilgileri.todo;
+            List<KartBilgileri> getInProgress = KartBilgileri.inProgress;
+            List<KartBilgileri> getDone = KartBilgileri.done;
+            short choseOperatingCard;
 
 
             while (true)
@@ -29,14 +29,14 @@ namespace toDo.Uygulamasi
                               + "(5) Kart Taşımak \n"
                               + "(6) işlemi sonlandırmak\n" 
                               + "İşlem=");
-                short islem = Convert.ToInt16(Console.ReadLine());
+                short operation = Convert.ToInt16(Console.ReadLine());
 
                 
 
                 
 
 
-                switch (islem)
+                switch (operation)
                 {
                     case 1:
                         for (int i = 1; i <= 3; i++)
@@ -44,16 +44,16 @@ namespace toDo.Uygulamasi
                             switch (i)
                             {
                                 case 1:
-                                    methods.Listele(toDo);
+                                    methods.Listing(getToDo);
                                     break;
                                 case 2:
-                                    methods.Listele(inProgress);
+                                    methods.Listing(getInProgress);
                                     break;
                                 case 3:
-                                    methods.Listele(done);
+                                    methods.Listing(getDone);
                                     break;
                                 default:
-                                    methods.HataDurumu();
+                                    methods.GetErrorSituation();
                                     break;
                             }
                         }
@@ -61,60 +61,60 @@ namespace toDo.Uygulamasi
                         break;
                     case 2:
 
-                        islemHangiKart = methods.KartSecimi();
-                        switch (islemHangiKart)
+                        choseOperatingCard = methods.GetCardSize();
+                        switch (choseOperatingCard)
                         {
                             case 1:
-                                methods.Ekle(toDo);
+                                methods.Add(getToDo);
                                 break;
                             case 2:
-                                methods.Ekle(inProgress);
+                                methods.Add(getInProgress);
                                 break;
                             case 3:
-                                methods.Ekle(done);
+                                methods.Add(getDone);
                                 break;
                             default:
-                                methods.HataDurumu();
+                                methods.GetErrorSituation();
                                 break;
                         }
 
                         break;
                     case 3:
 
-                        islemHangiKart = methods.KartSecimi();
-                        switch (islemHangiKart)
+                        choseOperatingCard = methods.GetCardSize();
+                        switch (choseOperatingCard)
                         {
                             case 1:
-                                methods.Sil(toDo);
+                                methods.Remove(getToDo);
                                 break;
                             case 2:
-                                methods.Sil(inProgress);
+                                methods.Remove(getInProgress);
                                 break;
                             case 3:
-                                methods.Sil(done);
+                                methods.Remove(getDone);
                                 break;
                             default:
-                                methods.HataDurumu();
+                                methods.GetErrorSituation();
                                 break;
                         }
 
                         break;
                     case 4:
 
-                        islemHangiKart = methods.KartSecimi();
-                        switch (islemHangiKart)
+                        choseOperatingCard = methods.GetCardSize();
+                        switch (choseOperatingCard)
                         {
                             case 1:
-                                methods.Guncelle(toDo);
+                                methods.Update(getToDo);
                                 break;
                             case 2:
-                                methods.Guncelle(inProgress);
+                                methods.Update(getInProgress);
                                 break;
                             case 3:
-                                methods.Guncelle(done);
+                                methods.Update(getDone);
                                 break;
                             default:
-                                methods.HataDurumu();
+                                methods.GetErrorSituation();
                                 break;
                         }
 
@@ -127,59 +127,59 @@ namespace toDo.Uygulamasi
                                   + "(3) DONE\n"
                                   + "İşlem=");
                         short tasınacakKartSecim = Convert.ToInt16(Console.ReadLine());
-                        methods.DegerGirSadeceBaslik();
-                        KartBilgileri todolistedeVarmi = toDo.Find(x => x.Baslik == methods.Baslik);
-                        KartBilgileri inProgresslistedeVarmi = inProgress.Find(x => x.Baslik == methods.Baslik);
-                        KartBilgileri donelistedeVarmi = done.Find(x => x.Baslik == methods.Baslik);
+                        methods.EnterYouTitle();
+                        KartBilgileri isThereToDoList = getToDo.Find(x => x.Title == methods.Title);
+                        KartBilgileri isThereProgressList = getInProgress.Find(x => x.Title == methods.Title);
+                        KartBilgileri isThereDoneList = getDone.Find(x => x.Title == methods.Title);
 
-                        if (todolistedeVarmi != null)
+                        if (isThereToDoList != null)
                         {   
                             switch (tasınacakKartSecim)
                             {
                                 case 2:
-                                    methods.Tasi(toDo, inProgress, todolistedeVarmi);
+                                    methods.Move(getToDo, getInProgress, isThereToDoList);
                                     break;
                                 case 3:
-                                    methods.Tasi(toDo, done, todolistedeVarmi);
+                                    methods.Move(getToDo, getDone, isThereToDoList);
                                     break;
                                 default:
-                                    methods.HataDurumu();
+                                    methods.GetErrorSituation();
                                     break;
                             }
                         }
-                        else if (inProgresslistedeVarmi != null)
+                        else if (isThereProgressList != null)
                         {
                             switch (tasınacakKartSecim)
                             {
                                 case 1:
-                                    methods.Tasi(inProgress, toDo, inProgresslistedeVarmi);
+                                    methods.Move(getInProgress, getToDo, isThereProgressList);
                                     break;
                                 case 3:
-                                    methods.Tasi(inProgress, done, inProgresslistedeVarmi);
+                                    methods.Move(getInProgress, getDone, isThereProgressList);
                                     break;
                                 default:
-                                    methods.HataDurumu();
+                                    methods.GetErrorSituation();
                                     break;
                             }
                         }
-                        else if (donelistedeVarmi != null)
+                        else if (isThereDoneList != null)
                         {
                             switch (tasınacakKartSecim)
                             {
                                 case 1:
-                                    methods.Tasi(done, toDo, donelistedeVarmi);
+                                    methods.Move(getDone, getToDo, isThereDoneList);
                                     break;
                                 case 2:
-                                    methods.Tasi(done, inProgress, donelistedeVarmi);
+                                    methods.Move(getDone, getInProgress, isThereDoneList);
                                     break;
                                 default:
-                                    methods.HataDurumu();
+                                    methods.GetErrorSituation();
                                     break;
                             }
                         }
                         else
                         {
-                            methods.HataDurumu();
+                            methods.GetErrorSituation();
                         }
 
                         break;
@@ -190,7 +190,7 @@ namespace toDo.Uygulamasi
 
                     default:
 
-                        methods.HataDurumu();
+                        methods.GetErrorSituation();
 
                         break;
                 }
