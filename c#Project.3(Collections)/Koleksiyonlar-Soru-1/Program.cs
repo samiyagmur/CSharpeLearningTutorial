@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections;                  
+using System.Collections;
 
 //www.patika.dev
        
@@ -10,25 +10,26 @@ namespace Koleksiyonlar_Soru_1
     {
         static void Main(string[] args)
         {
-            ArrayList liste1 = new ArrayList();
-            ArrayList liste2 = new ArrayList();
+            ArrayList list1 = new ArrayList();
+            ArrayList list2 = new ArrayList();
             int flagtr = 0;
             for (int i = 0; i < 20; i++) 
             {
-                Console.Write($"Lütfen işlem yapılmasını istediğiniz {i+1}.sayıyıları giriniz: ");
+                Console.Write("Lütfen işlem yapılmasını istediğiniz {0}.sayıyıları giriniz: ",i + 1);
+                string num = Console.ReadLine();
 
-                string sayi = Console.ReadLine();
-                int turnTheNumber;
-                bool sadeceSayi = int.TryParse(sayi, out turnTheNumber);
+                int turnSetNum;
+                bool isNumTrue = int.TryParse(num, out turnSetNum);//if numbber can turn int that case get to true,And We understand this is int.
+                                                                       //And We are set turnTheNumber Value to nu Value
                 while(true)
                 {   
-                    if(0<turnTheNumber && sadeceSayi == true)
+                    if(0<turnSetNum && isNumTrue == true)//And We contrast them for being int and turnTheNumber more than zero
                     { 
-                        for (int j = 2; j < turnTheNumber; j++)
+                        for (int j = 2; j < turnSetNum; j++)
                         {
-                            if(turnTheNumber % j == 0)
+                            if(turnSetNum % j == 0)
                             {
-                                flagtr = 1;
+                                flagtr = 1;//We are control with flag system.
                                 break;
                             }
                     
@@ -36,64 +37,64 @@ namespace Koleksiyonlar_Soru_1
                         }
                         if (flagtr == 0)
                         {
-                            liste1.Add(turnTheNumber);
+                            list1.Add(turnSetNum);
                         }
                         else
                         {
-                            liste2.Add(turnTheNumber);
+                            list2.Add(turnSetNum);
                         }
                         flagtr = 0;
                         break;
                     }
                     else
                     {   Console.Write($"Lütfen karakter girişi yapmayınız.Lütfen {i+1}.sayıyı tekrar giriniz: ");
-                        sayi = Console.ReadLine();
-                        sadeceSayi = int.TryParse(sayi, out turnTheNumber);
+                        num = Console.ReadLine();
+                        isNumTrue = int.TryParse(num, out turnSetNum);
 
 
                     }
                 }
             }
-            liste1.Add(2);
-            liste1.Sort();
-            liste1.Reverse();
+            list1.Add(2);
+            list1.Sort();
+            list1.Reverse();
             
-            liste2.Sort();
-            liste2.Reverse();
+            list2.Sort();
+            list2.Reverse();
             Console.WriteLine();
             Console.Write("Asal olan sayıların büyükten küçüğe doğru sıralaması: ");
-            foreach (int i in liste1)
+            foreach (int i in list1)
             {
                 Console.Write(i+" ");
             }
             Console.WriteLine();
             Console.Write("Asal olmayan sayıların büyükten küçüğe doğru sıralaması: ");
-            foreach (int i in liste2)
+            foreach (int i in list2)
             {
                 Console.Write(i + " ");
             }
             Console.WriteLine();
             Console.Write("Asal olan sayıların sayısı: ");
-            Console.Write(liste1.Count);
+            Console.Write(list1.Count);
             Console.WriteLine();
             Console.Write("Asal olmayan sayıların sayısı: ");
-            Console.Write(liste2.Count);
+            Console.Write(list2.Count);
             Console.WriteLine();
             Console.Write("Asal olan sayıların ortalaması: ");
-            int toplamListe1 = 0;
-            for(int i = 0; i < liste1.Count; i++)
+            int sumOfList1 = 0;
+            for(int i = 0; i < list1.Count; i++)
             {
-                toplamListe1 += Convert.ToInt32(liste1[i]);
+                sumOfList1 += Convert.ToInt32(list1[i]);
             }
-            Console.Write(toplamListe1 / liste1.Count);
+            Console.Write(sumOfList1 / list1.Count);
             Console.WriteLine();
             Console.Write("Asal olmayan sayıların ortalaması: ");
-            int toplamListe2 = 0;
-            for (int i = 0; i < liste2.Count; i++)
+            int sumOfList2 = 0;
+            for (int i = 0; i < list2.Count; i++)
             {
-                toplamListe2 += Convert.ToInt32(liste2[i]);
+                sumOfList2 += Convert.ToInt32(list2[i]);
             }
-            Console.Write(toplamListe2 / liste2.Count);
+            Console.Write(sumOfList2 / list2.Count);
         }
         
     }
